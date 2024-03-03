@@ -1,0 +1,53 @@
+.circle
+    width: 15rem
+    height: 15rem
+    outline: $color-light-purple 4rem solid
+    border-radius: 50%
+    display: inline-block
+    transition: all .2s
+    @include media-hover(hover)
+            &:hover
+                transform: scale(1.1)
+    @include media-hover(none)
+        &:active
+            transform: scale(1.1)
+    &_2
+        width: 15rem
+        height: 15rem
+        outline: $color-light-purple 6rem solid
+        outline-offset: -2rem
+        margin-bottom: 6rem
+        transition: all .2s
+        @include media-hover(hover)
+            &:hover
+                transform: scale(1.1)
+        @include media-hover(none)
+            &:active
+                transform: scale(1.1)
+    &_3
+        outline: $color-light-purple 5rem solid
+        outline-offset: -1rem
+        width: 15rem
+        height: 15rem
+        background: $color-light-purple
+        margin-bottom: 6rem
+        transition: all .2s
+        @include media-hover(hover)
+            &:hover
+                transform: scale(1.1)
+        @include media-hover(none)
+            &:active
+                transform: scale(1.1)
+.circle
+    &__cont 
+        margin: 0 auto
+        margin-bottom: 6rem
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        max-width: 114rem
+    &__box
+        text-align: center
+    &__header-paragraph
+        width: 36rem
+        text-shadow: $shadow-text

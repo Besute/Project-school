@@ -1,0 +1,78 @@
+.header-about
+    margin: 0 auto
+    margin-bottom: 15rem
+    max-width: 93rem
+    max-height: 43rem
+    border-radius: 8rem
+    padding-top: 9rem
+    padding-left: 5rem
+    transform: skewY(-5deg)
+    box-shadow: $shadow
+    background: $color-blue
+    position: relative
+    z-index: 2
+    // Это картинка, добавлена с помощью псевдоэлемента и background-image
+    &:after
+        content: ""
+        background: url(../img/Мальчик.png) center no-repeat
+        background-size: 32rem
+        display: block
+        width: 40%
+        height: 120%
+        transform: skewY(5deg)
+        position: absolute
+        top: -5%
+        left: 57%
+    &__content
+        transform: skewY(5deg)
+        background-size: 32rem
+        height: 35rem
+        &_button
+            height: 0
+            width: 0
+    &__img
+        width: 3rem
+        transform: translateY(-50%)
+    &__title
+        display: inline-block
+        width: 55rem
+        margin-bottom: 3rem
+        transition: all .2s
+        text-transform: uppercase
+    &__paragraph
+        width: 54rem    
+        display: inline-block
+        background-image: url(../img/Звезда.png)
+        background-repeat: no-repeat
+        background-size: 2.5rem
+        padding-left: 3rem
+        &:not(:last-child)
+            margin-bottom: 1rem
+    &__button
+        position: absolute
+        top: -11rem
+        left: 3rem
+    &_quote
+        width: 90rem
+        height: 10rem
+        padding: 0
+        padding: 2rem 0 1.5rem .4rem
+        transform: skewY(0deg)
+        display: flex
+        align-items: center
+        transition: all .2s
+        & img
+            display: inline-block
+            width: 8rem
+            margin-right: 1.4rem
+        &::after
+            display: none
+        &-text
+            width: 90%
+            display: inline-block
+        @include media-hover(hover)
+            &:hover
+                background: $color-light-purple
+        @include media-hover(none)
+            &:active
+                    background: $color-light-purple

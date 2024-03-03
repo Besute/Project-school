@@ -1,0 +1,76 @@
+
+// Импорт шрифтов  
+.anonymous-pro-regular 
+  font-family: "Anonymous Pro", monospace
+  font-weight: 400
+  font-style: normal
+
+.anonymous-pro-bold 
+  font-family: "Anonymous Pro", monospace
+  font-weight: 700
+  font-style: normal
+
+
+// Основные типографические утилиты
+.red
+  color: $color-red
+
+// Элементы текста
+.header-about__paragraph
+  width: 54rem    
+  display: inline-block
+  background-image: url(../img/Звезда.png)
+  background-repeat: no-repeat
+  background-size: 2.5rem
+  padding-left: 3rem
+  &:not(:last-child)
+      margin-bottom: 1rem
+    
+
+.paragraph
+  font-size: 2rem
+  letter-spacing: 3%
+  line-height: 2rem 
+  color: $color-white
+  letter-spacing: 0
+  &_section-name
+    font-size: 5rem
+    color: $color-black
+  &_2
+    font-size: 3rem
+    color: $color-black
+  &_3
+    font-size: 3rem
+    color: $color-white
+
+.header-about__title
+  color: $color-white
+  letter-spacing: 0
+  line-height: 3.5rem
+  font-size: 3rem
+  
+.title
+  text-align: center
+  font-size: 3.6rem
+  position: relative   
+.card__title
+  font-size: 3rem
+  color: white
+  width: 32rem
+  letter-spacing: 1%
+  
+// Анимация текста
+.anim-text
+    transition: all .2s
+    @include animation-text
+    &_shadow
+      @include animation-text-up
+
+.card__text
+  line-height: 3rem
+  color: white
+  font-size: 2.5rem
+  text-align: center
+  width: 32rem
+  &_small
+    font-size: 2rem

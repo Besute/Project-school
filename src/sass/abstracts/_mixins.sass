@@ -1,0 +1,25 @@
+
+// Миксин для определения возможности наводки    
+@mixin media-hover($hover)
+    @if $hover == hover
+        @media (hover: hover)
+            @content
+    @if $hover == none
+        @media (hover: none)
+            @content
+    
+
+@mixin animation-text
+    @include media-hover(hover)
+        &:hover
+            letter-spacing: .15rem 
+    @include media-hover(none)
+        &:active
+            letter-spacing: .15rem 
+@mixin animation-text-up
+    @include media-hover(hover)
+        &:hover
+            transform: translateY(-.3rem)
+            text-shadow: $shadow-text
+    @include media-hover(none)
+    

@@ -1,0 +1,57 @@
+// Карточки на сайте    
+.card
+    border-radius: 2rem
+    padding: 3rem 1rem 3rem 1rem
+    text-align: center
+    transition: all .15s
+    &__button
+        position: absolute
+        bottom: 5%
+        left: 50%
+        transform: translate(-50%, -50%)
+    &__paragraph
+        margin-bottom: 4rem
+    &__title
+        margin-bottom: 3rem
+        &_small
+            margin-bottom: 2rem
+    &__circle
+        width: 20rem
+        height: 20rem
+        position: absolute
+        right: 2%
+        top: 25%
+        border-radius: 50%
+        background: rgba($color-black, 0.45) 
+        &_1
+            background: rgba($color-black, 0.45) url(../img/mob.svg) center/cover no-repeat
+            background-size: 8rem
+        &_2
+            background: rgba($color-black, 0.45) url(../img/bra.svg) center/cover no-repeat
+            background-size: 15rem
+        &_3
+            background: rgba($color-black, 0.45) url(../img/mon.svg) center/cover no-repeat
+            background-size: 13rem
+        &_4
+            background: rgba($color-black, 0.45) url(../img/rout.svg) center/cover no-repeat
+            background-size: 12rem
+    // Все цвета карточек
+    &_1
+        background: $card-dark-blue
+        position: relative
+    &_2
+        background: $card-purple
+        position: relative
+    &_3
+        background: $color-light-purple
+        position: relative
+    &_4
+        background: $card-light-blue
+        position: relative
+    @include media-hover(hover)
+        &:hover
+            transform: translateY(-1rem)
+            box-shadow: $shadow
+    @include media-hover(none)
+        &:active
+            transform: scale(1.01)

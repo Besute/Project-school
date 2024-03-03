@@ -1,0 +1,27 @@
+
+// БЭМ-Элементы-заполнители сайта
+.semi-circle
+    position: absolute
+    width: 33rem
+    height: 33rem
+    &_1
+        left: 63%
+        top: 15%
+        transition: all 1s 
+        @include media-hover(hover)
+            &:hover
+                transform: rotate(360deg)
+        @include media-hover(none)
+            &:active
+                transform: scale(1.2)
+    &_2
+        top: 50%
+        left: 5%
+        transition: all 1s 
+        @include media-hover(hover)
+            &:hover
+                transform: rotate(360deg)
+        @include media-hover(none)
+            &:active
+                transform: scale(1.2)
+            

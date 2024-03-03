@@ -1,0 +1,33 @@
+.filler
+    position: relative
+    top: -92rem
+    left: 2rem
+    z-index: 0
+    &-left *, &-right *
+        width: 5rem
+        height: 100rem
+        background: red
+        margin-right: 5rem
+        border-radius: 5rem
+    &-right, &-left
+        display: grid
+        grid-template-columns: repeat(6, minmax(6rem, 1fr))
+        grid-template-rows: min-content
+        &__item
+            &-2, &-4, &-6
+                transform: translateY(-6rem)
+            &-1
+                background: $color-pink
+            &-2
+                background: $color-pale-purple
+            &-3
+                background:$color-blue
+            &-4
+                background: $color-pink
+            &-5
+                background:$color-pale-purple
+            &-6
+                background:$color-blue
+                
+    
+        
