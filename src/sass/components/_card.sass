@@ -2,7 +2,7 @@
 .card
     display: grid
     grid-template-columns: repeat(2, minmax(min-content, max-content))
-    grid-template-rows: repeat(2, 1fr)
+    grid-template-rows: max-content 1fr
     border-radius: 2rem
     transition: all .15s
     justify-items: center
@@ -27,7 +27,8 @@
         grid-row: 1 / -1
         align-self: center
         border-radius: 50%
-        background: rgba($color-black, 0.45) 
+        background: rgba($color-black, 0.45)
+        // Картинки в кружках
         &_1
             background: rgba($color-black, 0.45) url(../img/mob.svg) center/cover no-repeat
             background-size: 8rem
@@ -40,6 +41,21 @@
         &_4
             background: rgba($color-black, 0.45) url(../img/rout.svg) center/cover no-repeat
             background-size: 12rem
+        &_5
+            background: rgba($color-black, 0.45) url(../img/robot.svg) center/cover no-repeat
+            background-size: 15rem
+        &_6
+            background: rgba($color-black, 0.45) url(../img/drone.svg) center/cover no-repeat
+            background-size: 15rem
+        &_7
+            background: rgba($color-black, 0.45) url(../img/quantum.svg) center/cover no-repeat
+            background-size: 13rem
+        &_8
+            background: rgba($color-black, 0.45) url(../img/wifi.svg) center/cover no-repeat
+            background-size: 13rem
+        &_9
+            background: rgba($color-black, 0.45) url(../img/3d-printer.svg) center/cover no-repeat
+            background-size: 13rem
     // Все цвета карточек
     &_1
         background: $card-dark-blue
