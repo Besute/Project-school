@@ -6,6 +6,10 @@
 html
     font-size: 62.5%
     overflow-x: hidden
+    @include responde(desktop)
+        font-size: 50%
+    @include responde(tablet)
+        font-size: 45%
 
 .header
     min-height: 136rem  

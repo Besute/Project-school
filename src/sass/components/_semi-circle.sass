@@ -4,10 +4,16 @@
     position: absolute
     width: 33rem
     height: 33rem
+    @include responde(desktop)
+        width: 26rem
+        height: 26rem
     &_1
-        left: 63%
+        left: 73%
         top: 15%
         transition: all 1s 
+        @include responde(desktop)
+            left: 70%
+            top: 20%
         @include media-hover(hover)
             &:hover
                 transform: rotate(360deg)
@@ -25,4 +31,3 @@
         @include media-hover(none)
             &:active
                 transform: scale(1.2)
-            
