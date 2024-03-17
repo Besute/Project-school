@@ -22,4 +22,17 @@
             transform: translateY(-.3rem)
             text-shadow: $shadow-text
     @include media-hover(none)
+
+@mixin responde($monitor)
+    @if $monitor == desktop
+        @media (max-width: 1208px)
+            @content
+    @if $monitor == tablet
+        @media (max-width: 920px)
+            @content
+    @if $monitor == smaller-desktop
+        @media (max-width: 870px)
+
+        
+        
     
