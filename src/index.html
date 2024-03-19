@@ -8,18 +8,41 @@
       href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <script defer src="script.js"></script>
   </head>
   <body>
     <!-- Общий контейнер -->
-    <div class="menu-burger">
-      <form class="menu-burger__form">
-        <input type="checkbox" id="burger-button" name="burger-button" class="menu-burger__button">
-        <label for="burger-button" class="menu-burger__label"></label>
-      </form>
-    </div>
     <div class="container">
+      <div class="menu-burger">
+        <input
+          type="checkbox"
+          id="burger-button"
+          name="burger-button"
+          class="menu-burger__button"
+        />
+        <label for="burger-button" class="menu-burger__label">
+          <div class="menu-burger__icon"></div>
+        </label>
+        <div class="menu-burger__background">
+          <nav class="nav menu-burger__nav">
+            <ul class="nav__menu">
+              <li class="nav__item">
+                <a href="#" class="nav__href anonymous-pro-bold"
+                  >Общая информация</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__href anonymous-pro-bold">Курсы</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__href anonymous-pro-bold">Контактны </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
       <!-- Первая секция хедер -->
       <header class="header">
         <!-- Навигационное меню -->
@@ -65,13 +88,23 @@
           <div class="header-about__content header-about__content_button">
             <div class="header-about__button">
               <!-- Сам элемент кнопки -->
-              <a href="#" class="button__href button anonymous-pro-bold ">Записаться</a>
+              <a href="#" class="button__href button anonymous-pro-bold"
+                >Записаться</a
+              >
             </div>
           </div>
         </div>
 
-        <img src="img/Ellipse19.svg" alt="Полукруг" class="semi-circle semi-circle_1" />
-        <img src="img/Ellipse19.svg" alt="Полукруг" class="semi-circle semi-circle_2" />
+        <img
+          src="img/Ellipse19.svg"
+          alt="Полукруг"
+          class="semi-circle semi-circle_1"
+        />
+        <img
+          src="img/Ellipse19.svg"
+          alt="Полукруг"
+          class="semi-circle semi-circle_2"
+        />
 
         <!-- Подсекция с фиолетовыми кружками -->
         <h2 class="title margin-bottom-7rem anonymous-pro-bold anim-text">
