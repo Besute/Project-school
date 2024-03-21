@@ -11,6 +11,12 @@
     background: $color-blue
     position: relative
     z-index: 2
+    @include responde(mobile-1)
+        padding: 7rem 4rem
+    @include responde(mobile-1)
+        transform: skewY(0)
+        max-width: 80rem
+        max-height: 50rem
     // Это картинка, добавлена с помощью псевдоэлемента и background-image
     &:after
         content: ""
@@ -23,10 +29,15 @@
         position: absolute
         top: -5%
         left: 57%
+        @include responde(mobile-1)
+            display: none
     &__content
         transform: skewY(5deg)
         background-size: 32rem
         height: 35rem
+        @include responde(mobile-1)
+            transform: skewY(0)
+            text-align: center
         &_button
             height: 0
             width: 0
@@ -39,6 +50,8 @@
         margin-bottom: 3rem
         transition: all .2s
         text-transform: uppercase
+        @include responde(mobile-1)
+            width: 100%
     &__paragraph
         width: 54rem    
         display: inline-block
@@ -48,10 +61,16 @@
         padding-left: 3rem
         &:not(:last-child)
             margin-bottom: 1rem
+        @include responde(mobile-1)
+            text-align: left
+            width: 92%
     &__button
         position: absolute
         top: -11rem
         left: 3rem
+        @include responde(mobile-1)
+            top: 0
+            left: 12rem
     &_quote
         width: 90rem
         height: 10rem

@@ -4,8 +4,21 @@
     align-content: center
     position: relative
     z-index: 1
-    grid-template-rows: repeat(auto-fit, 42rem)
+    grid-template-rows: repeat(auto-fit,  max-content)
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
     grid-auto-flow: 42rem
     grid-gap: 5rem
-    text-align: left
+    text-align: left    
+.grid-filler
+    display: grid
+    justify-content: center
+    align-content: center
+    position: relative
+    z-index: 1
+    grid-template-rows: repeat(auto-fit,  max-content)
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
+    grid-auto-flow: 42rem
+    grid-gap: 5rem
+    text-align: left    
+    @include responde(smaller-desktop)
+        display: none
