@@ -22,8 +22,13 @@
             transform: translateY(-.3rem)
             text-shadow: $shadow-text
     @include media-hover(none)
+        &:hover
+            transform: scale(1.1)
 
 @mixin responde($monitor)
+    @if $monitor == big-desktop
+        @media (min-width: 1208px)
+                @content
     @if $monitor == desktop
         @media (max-width: 1208px)
             @content
@@ -31,7 +36,15 @@
         @media (max-width: 920px)
             @content
     @if $monitor == smaller-desktop
-        @media (max-width: 870px)
+        @media (max-width: 815px)
+            @content
+    @if $monitor == mobile-1
+        @media (max-width: 503px)
+            @content
+    // @if $monitor == mobile-2
+    //     @media (max-width: 503px)
+    //             @content
+            
 
         
         

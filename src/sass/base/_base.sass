@@ -7,14 +7,20 @@ html
     font-size: 62.5%
     overflow-x: hidden
     @include responde(desktop)
-        font-size: 50%
+        font-size: 47.5%
     @include responde(tablet)
-        font-size: 45%
+        font-size: 42%
+    @include responde(smaller-desktop)
+        font-size: 35%
 
 .header
     min-height: 136rem  
     background: linear-gradient(342deg, rgba(178,152,195,1) 0%, rgba(177,140,201,0.7035189075630253) 100%)
     clip-path: polygon(20% 0%, 0 0, 0 43%, 0 97%, 10% 90%, 55% 100%, 91% 89%, 100% 100%, 100% 53%, 100% 20%, 100% 0, 44% 0)
+    @include responde(smaller-desktop)
+        min-height: 80rem  
+    @include responde(tablet)
+        padding-top: 10rem
     &-circle__box
         max-width: 35rem
 .main-content > p
@@ -27,3 +33,5 @@ html
     justify-content: center
     margin-bottom: 20rem
     gap: 1.5rem
+    @include responde(smaller-desktop)
+        margin-bottom: 10rem

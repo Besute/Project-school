@@ -25,6 +25,8 @@
   padding-left: 3rem
   &:not(:last-child)
       margin-bottom: 1rem
+  @include responde(mobile-1)
+    background-size: 3rem
     
 
 .paragraph
@@ -33,9 +35,14 @@
   line-height: 2rem 
   color: $color-white
   letter-spacing: 0
+  @include responde(mobile-1)
+    font-size: 3rem
+    line-height: 3rem
   &_section-name
     font-size: 5rem
     color: $color-black
+    @include responde(smaller-desktop)
+      font-size: 4rem
   &_2
     font-size: 3rem
     color: $color-black
@@ -65,12 +72,3 @@
     @include animation-text
     &_shadow
       @include animation-text-up
-
-.card__text
-  line-height: 3rem
-  color: white
-  font-size: 2.5rem
-  text-align: center
-  width: 32rem
-  &_small
-    font-size: 2rem

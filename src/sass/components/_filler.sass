@@ -39,6 +39,8 @@
             background: red
             margin-right: 5rem
             border-radius: 5rem
+            @include responde(smaller-desktop)
+                display: none
         &-right, &-left
             display: grid
             grid-template-columns: repeat(6, minmax(6rem, 1fr))

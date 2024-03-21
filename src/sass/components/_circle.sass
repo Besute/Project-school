@@ -39,6 +39,9 @@
             &:active
                 transform: scale(1.1)
 .circle
+    &__text
+        @include responde(smaller-desktop)
+            display: none
     &__cont 
         margin: 0 auto
         margin-bottom: 6rem
@@ -46,6 +49,10 @@
         justify-content: space-evenly
         align-items: center
         max-width: 114rem
+        @include responde(smaller-desktop)
+            width: 50vw
+        @include responde(smaller-desktop)
+            display: none
     &__box
         text-align: center
     &__header-paragraph
