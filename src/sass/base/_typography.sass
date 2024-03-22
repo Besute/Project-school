@@ -15,20 +15,6 @@
 .red
   color: $color-red
 
-// Элементы текста
-.header-about__paragraph
-  width: 54rem    
-  display: inline-block
-  background-image: url(../img/Звезда.png)
-  background-repeat: no-repeat
-  background-size: 2.5rem
-  padding-left: 3rem
-  &:not(:last-child)
-      margin-bottom: 1rem
-  @include responde(mobile-1)
-    background-size: 3rem
-    
-
 .paragraph
   font-size: 2rem
   letter-spacing: 3%
@@ -38,6 +24,8 @@
   @include responde(mobile-1)
     font-size: 3rem
     line-height: 3rem
+  @include responde(mobile-2)
+    font-size: 3.5rem
   &_section-name
     font-size: 5rem
     color: $color-black
@@ -49,12 +37,6 @@
   &_3
     font-size: 3rem
     color: $color-white
-
-.header-about__title
-  color: $color-white
-  letter-spacing: 0
-  line-height: 3.5rem
-  font-size: 3rem
   
 .title
   text-align: center

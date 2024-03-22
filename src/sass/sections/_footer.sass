@@ -1,0 +1,40 @@
+
+// Настройка футера
+.section-footer
+    margin: 0 auto
+    position: relative
+    &__container
+        -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%)
+        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%)
+        background: linear-gradient(250deg,rgba($gradient-color, 1), rgba($gradient-color, 0.55))
+        @include responde(smaller-desktop)
+            -webkit-clip-path: none
+            clip-path: none
+    .nav
+        margin-bottom: 0
+        &__menu
+            text-align: center
+            display: grid
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr))
+            grid-auto-rows: max-content
+            justify-content: space-around
+            row-gap: 5rem
+            column-gap: 7rem
+        &__href
+            @include responde(smaller-desktop)
+                font-size: 3.2rem
+        &__img
+            @include responde(smaller-desktop)
+                width: 20rem
+            @include responde(mobile-1)
+                display: none
+
+.hr
+    border: $color-dark-purple .15rem solid
+    z-index: 1
+    width: 100%
+    height: .1rem
+    position: absolute
+    top: 20%
+    @include responde(smaller-desktop)
+        display: none
