@@ -16,18 +16,13 @@ const mainInfo = document.querySelector("ul").childNodes[5],
 const mass = [text, text2, text3, text4];
 const observer = new IntersectionObserver(
   (en) => {
-    if (!en[0].isIntersecting) return;
+    if (en[0].isIntersecting) return;
     nav_head.classList.toggle("fixed");
   },
   { threshold: 0 }
 );
 observer.observe(nav_head);
 
-for (i of mass) {
-  i.forEach((i) => {
-    i.classList.remove("anim-text");
-  });
-}
 navig_main.forEach((i) => {
   i.addEventListener("click", (e) => {
     e.preventDefault();
@@ -97,4 +92,9 @@ if (win <= 920) {
   burger.addEventListener("click", () => {
     firstSection.scrollIntoView({ behavior: "smooth" });
   });
+  for (i of mass) {
+    i.forEach((i) => {
+      i.classList.remove("anim-text");
+    });
+  }
 }

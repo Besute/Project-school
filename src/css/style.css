@@ -27,6 +27,8 @@
   position: sticky;
   z-index: 201;
   top: 0;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10rem;
 }
 
 *, ::after, ::before {
@@ -616,6 +618,9 @@ html {
   }
 }
 
+.circle__text {
+  z-index: 10000;
+}
 @media (max-width: 815px) {
   .circle__text {
     display: none;
