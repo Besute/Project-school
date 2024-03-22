@@ -13,10 +13,18 @@
     z-index: 2
     @include responde(mobile-1)
         padding: 7rem 4rem
-    @include responde(mobile-1)
         transform: skewY(0)
         max-width: 80rem
         max-height: 50rem
+    @include responde(mobile-2)
+        min-height: 100rem
+        max-width: 80vw
+        padding: 1rem 3rem 4rem 3rem
+        margin-bottom: 20rem
+        display: grid
+        grid-template-rows: repeat(auto-fit, minmax(min-content, 1fr))
+        align-items: flex-end
+
     // Это картинка, добавлена с помощью псевдоэлемента и background-image
     &:after
         content: ""
@@ -34,13 +42,19 @@
     &__content
         transform: skewY(5deg)
         background-size: 32rem
-        height: 35rem
+        min-height: 35rem
         @include responde(mobile-1)
             transform: skewY(0)
             text-align: center
         &_button
-            height: 0
-            width: 0
+            @include responde(mobile-2)
+                grid-row: 2 / 3
+                min-height: 10rem
+                width: 100%
+                display: block
+                margin: 0 auto
+
+
     &__img
         width: 3rem
         transform: translateY(-50%)
@@ -50,8 +64,15 @@
         margin-bottom: 3rem
         transition: all .2s
         text-transform: uppercase
+        color: $color-white
+        letter-spacing: 0
+        line-height: 3.5rem
+        font-size: 3rem
         @include responde(mobile-1)
             width: 100%
+        @include responde(mobile-2)
+            font-size: 4rem
+        
     &__paragraph
         width: 54rem    
         display: inline-block
@@ -64,13 +85,25 @@
         @include responde(mobile-1)
             text-align: left
             width: 92%
+            background-size: 3rem
+        @include responde(mobile-2)
+            width: 100%
+            background-size: 5rem
+            padding-left: 5.5rem
+            &:not(:last-child)
+                margin-bottom: 5rem
+            
     &__button
         position: absolute
-        top: -11rem
-        left: 3rem
+        top: -20%
+        left: 2%
         @include responde(mobile-1)
             top: 0
-            left: 12rem
+            left: 16%
+        @include responde(mobile-2)
+            left: 50%
+            top: 50%
+            transform: translate(-50%, -50%)
     &_quote
         width: 90rem
         height: 10rem
@@ -80,15 +113,23 @@
         display: flex
         align-items: center
         transition: all .2s
+        @include responde(mobile-2)
+            width: 100%
+            min-height: 10vh
         & img
             display: inline-block
             width: 8rem
             margin-right: 1.4rem
+            @include responde(mobile-2)
+                margin-right: .5rem
         &::after
             display: none
         &-text
             width: 90%
             display: inline-block
+            @include responde(mobile-2)
+                font-size: 2.5rem
+                width: 75%
         @include media-hover(hover)
             &:hover
                 background: $color-light-purple

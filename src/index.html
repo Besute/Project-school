@@ -9,50 +9,27 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+
     <script defer src="script.js"></script>
   </head>
   <body>
     <!-- Общий контейнер -->
     <div class="container">
-      <!-- <div class="menu-burger">
-        <input
-          type="checkbox"
-          id="burger-button"
-          name="burger-button"
-          class="menu-burger__button"
-        />
-        <label for="burger-button" class="menu-burger__label">
-          <div class="menu-burger__icon"></div>
-        </label>
-        <div class="menu-burger__background">
-          <nav class="nav menu-burger__nav">
-            <ul class="nav__menu">
-              <li class="nav__item">
-                <a href="#" class="nav__href anonymous-pro-bold"
-                  >Общая информация</a
-                >
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__href anonymous-pro-bold">Курсы</a>
-              </li>
-              <li class="nav__item">
-                <a href="#" class="nav__href anonymous-pro-bold">Контактны </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div> -->
+      <!-- Меню-бургер в js -->
       <!-- Первая секция хедер -->
       <header class="header">
         <!-- Навигационное меню -->
-        <nav class="nav">
+        <nav class="nav nav_header">
           <ul class="nav__menu">
             <img src="icons/логотип1 1.png" alt="Лого" class="nav__img" />
             <li class="nav__item">
-              <a href="#" class="nav__href anonymous-pro-bold">Записаться</a>
+              <!-- Класс navi-main для отличия от бургера -->
+              <a href="" class="nav__href anonymous-pro-bold navi__main"
+                >Главная</a
+              >
             </li>
             <li class="nav__item">
-              <a href="" class="nav__href anonymous-pro-bold">Курсы</a>
+              <a href="#" class="nav__href anonymous-pro-bold">Записаться</a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__href anonymous-pro-bold">Контактны </a>
@@ -229,7 +206,7 @@
                     >Записаться</a
                   >
                 </div>
-                <div class="card__circle card__circle_2">
+                <div class="card__circle card__circle_3">
                   <!-- Это картинка -->
                   <div class="card__screen"></div>
                 </div>
@@ -400,7 +377,7 @@
           <div class="sections-main">
             <img src="img/chip-2.svg" alt="Чип" class="second-section__img" />
             <h2
-              class="paragraph_section-name anonymous-pro-regular second-section__par anim-text"
+              class="paragraph_section-name anonymous-pro-regular second-section__par anim-text third-section__text third-section__text_small"
             >
               Электроника и программирование
             </h2>
@@ -497,15 +474,15 @@
             <ul class="nav__menu">
               <img src="icons/логотип1 1.png" alt="Лого" class="nav__img" />
               <li class="nav__item">
-                <a href="#" class="nav__href anonymous-pro-bold"
-                  >Общая информация</a
+                <a href="" class="nav__href anonymous-pro-bold navi__main"
+                  >Главная</a
                 >
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__href anonymous-pro-bold">Курсы</a>
+                <a href="#" class="nav__href anonymous-pro-bold">Записаться</a>
               </li>
               <li class="nav__item">
-                <a href="#" class="nav__href anonymous-pro-bold">Контактны</a>
+                <a href="#" class="nav__href anonymous-pro-bold">Контактны </a>
               </li>
             </ul>
           </nav>
