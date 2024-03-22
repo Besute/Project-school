@@ -228,21 +228,6 @@ html {
   }
 }
 
-.modal-window {
-  position: fixed;
-  z-index: 200;
-  height: 100vh;
-  width: 100vw;
-  background: rgba(0, 0, 0, 0.4);
-  padding-top: 10vh;
-}
-.modal-window__window {
-  width: 65%;
-  height: 80%;
-  background: red;
-  margin: 0 auto;
-}
-
 .first-section {
   text-align: center;
   position: relative;
