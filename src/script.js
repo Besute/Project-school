@@ -11,7 +11,8 @@ const mainInfo = document.querySelector("ul").childNodes[5],
   text3 = document.querySelectorAll("h2"),
   text4 = document.querySelectorAll("div"),
   navig_main = document.querySelectorAll(".navi__main"),
-  nav_head = document.querySelector(".nav_header");
+  nav_head = document.querySelector(".nav_header"),
+  nav_item_2 = document.querySelector(".nav__item_2");
 
 const mass = [text, text2, text3, text4];
 const observer = new IntersectionObserver(
@@ -21,6 +22,7 @@ const observer = new IntersectionObserver(
   },
   { threshold: 0 }
 );
+
 observer.observe(nav_head);
 
 navig_main.forEach((i) => {
@@ -30,6 +32,10 @@ navig_main.forEach((i) => {
   });
 });
 mainInfo.addEventListener("click", (e) => {
+  e.preventDefault();
+  firstSection.scrollIntoView({ behavior: "smooth" });
+});
+nav_item_2.addEventListener("click", (e) => {
   e.preventDefault();
   firstSection.scrollIntoView({ behavior: "smooth" });
 });

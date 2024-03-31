@@ -27,8 +27,9 @@
   position: sticky;
   z-index: 201;
   top: 0;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 10rem;
+  background: rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 6rem;
+  border-bottom-right-radius: 6rem;
 }
 
 *, ::after, ::before {
@@ -131,6 +132,11 @@ html {
 @media (max-width: 448px) {
   .paragraph {
     font-size: 3.5rem;
+  }
+}
+@media (max-width: 300px) {
+  .paragraph {
+    font-size: 3rem;
   }
 }
 .paragraph_section-name {
@@ -280,6 +286,12 @@ html {
     height: 6rem;
   }
 }
+@media (max-width: 300px) {
+  .second-section__img {
+    width: 5rem;
+    height: 5rem;
+  }
+}
 
 .item_3 {
   grid-column: 1/3;
@@ -307,6 +319,11 @@ html {
 @media (max-width: 448px) {
   .third-section__text_small {
     font-size: 2.5rem;
+  }
+}
+@media (max-width: 300px) {
+  .third-section__text_small {
+    font-size: 2.2rem;
   }
 }
 
@@ -352,6 +369,12 @@ html {
     display: none;
   }
 }
+@media (max-width: 448px) {
+  .section-footer .nav .nav__item:last-child {
+    grid-column: 1/3;
+    justify-self: center;
+  }
+}
 
 .hr {
   border: #C8B7D4 0.15rem solid;
@@ -391,6 +414,11 @@ html {
 @media (max-width: 448px) {
   .button__header-about {
     padding: 1rem 15rem;
+  }
+}
+@media (max-width: 300px) {
+  .button__header-about {
+    padding: 1rem 10rem;
   }
 }
 .button__href:link, .button__href:visited {
@@ -781,6 +809,11 @@ html {
     font-size: 4rem;
   }
 }
+@media (max-width: 300px) {
+  .header-about__title {
+    font-size: 3.5rem;
+  }
+}
 .header-about__paragraph {
   width: 54rem;
   display: inline-block;
@@ -864,6 +897,11 @@ html {
   .header-about_quote-text {
     font-size: 2.5rem;
     width: 75%;
+  }
+}
+@media (max-width: 300px) {
+  .header-about_quote-text {
+    font-size: 2.2rem;
   }
 }
 @media (hover: hover) {
@@ -1203,6 +1241,11 @@ html {
   transition: all 0.3s;
   outline: black 0.1rem solid;
 }
+@media (max-width: 300px) {
+  .menu-burger__background {
+    width: 35vw;
+  }
+}
 .menu-burger__button {
   display: none;
 }
@@ -1238,7 +1281,7 @@ html {
   transform: translate(-50%, -50%);
 }
 .menu-burger__button:checked ~ .menu-burger__nav, .menu-burger__button:checked ~ .menu-burger__background {
-  opacity: 1;
+  opacity: 0.9;
   transform: translateX(0);
 }
 .menu-burger__button:checked ~ .menu-burger__label .menu-burger__icon {
