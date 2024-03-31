@@ -1234,7 +1234,7 @@ html {
   position: fixed;
   width: 25vw;
   height: 100vh;
-  background: linear-gradient(250deg, #a28ab1, #bb5be8);
+  background: white;
   z-index: 99;
   right: 0;
   transform: translateX(1000px);
@@ -1245,6 +1245,16 @@ html {
   .menu-burger__background {
     width: 35vw;
   }
+}
+.menu-burger__foreground {
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -100;
+  right: 0;
+  transition: all 0.4s;
 }
 .menu-burger__button {
   display: none;
@@ -1281,8 +1291,12 @@ html {
   transform: translate(-50%, -50%);
 }
 .menu-burger__button:checked ~ .menu-burger__nav, .menu-burger__button:checked ~ .menu-burger__background {
-  opacity: 0.9;
+  opacity: 1;
   transform: translateX(0);
+}
+.menu-burger__button:checked ~ .menu-burger__nav, .menu-burger__button:checked ~ .menu-burger__foreground {
+  opacity: 1;
+  z-index: 98;
 }
 .menu-burger__button:checked ~ .menu-burger__label .menu-burger__icon {
   transform: rotate(45deg) translate(-40%, 400%);

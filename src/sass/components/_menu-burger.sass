@@ -27,7 +27,8 @@
         position: fixed
         width: 25vw
         height: 100vh
-        background: linear-gradient(250deg,rgba($gradient-color, 1), rgba($color-pink, 1))
+        // background: linear-gradient(250deg,rgba($gradient-color, 1), rgba($color-pink, 1))
+        background: rgba(white, 1)
         z-index: 99
         right: 0
         transform: translateX(1000px)
@@ -35,6 +36,15 @@
         outline: black .1rem solid
         @include responde(mobile-3)
             width: 35vw
+    &__foreground
+        opacity: 0
+        background: rgba($color-black, 0.5)
+        width: 100vw
+        height: 100vh
+        position: fixed
+        z-index: -100
+        right: 0
+        transition: all .4s
     &__button
         display: none
     &__label
@@ -66,14 +76,18 @@
             top: 40%
             transform: translate(-50%, -50%)
     &__button:checked ~ &__nav, &__button:checked ~ &__background
-        opacity: 0.9
+        opacity: 1
         transform: translateX(0)
+    &__button:checked ~ &__nav, &__button:checked ~ &__foreground
+        opacity: 1
+        z-index: 98
     &__button:checked ~ &__label &__icon
         transform: rotate(45deg) translate(-40%, 400%)
         &::before
             transform: rotate(-90deg)
         &::after
             display: none
+
             
             
               

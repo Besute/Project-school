@@ -79,6 +79,7 @@ if (win <= 920) {
         </ul>
       </nav>
     </div>
+    <div class='menu-burger__foreground'></div>
   </div>
   
   `
@@ -86,7 +87,6 @@ if (win <= 920) {
   const burger = document.querySelector(".nav__href_section-1"),
     menu_href = document.querySelectorAll(".nav__href"),
     nav_main = document.querySelector(".nav__main");
-
   menu_href.forEach((i) => {
     i.addEventListener("click", (e) => {
       e.preventDefault();
