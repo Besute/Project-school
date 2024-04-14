@@ -597,6 +597,8 @@ html {
   border-radius: 50%;
   display: inline-block;
   transition: all 0.2s;
+  position: relative;
+  z-index: 10;
 }
 @media (hover: hover) {
   .circle:hover {
@@ -768,6 +770,8 @@ html {
   transform: skewY(5deg);
   background-size: 32rem;
   min-height: 35rem;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 503px) {
   .header-about__content {
