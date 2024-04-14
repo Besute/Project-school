@@ -1239,7 +1239,6 @@ html {
   right: 0;
   transform: translateX(1000px);
   transition: all 0.3s;
-  outline: black 0.1rem solid;
 }
 @media (max-width: 300px) {
   .menu-burger__background {
@@ -1265,7 +1264,8 @@ html {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.5);
+  background: #e2e2e2;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 0.4rem 0.4rem;
   right: 5%;
   top: 4%;
 }

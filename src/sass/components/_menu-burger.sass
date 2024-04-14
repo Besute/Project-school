@@ -27,13 +27,11 @@
         position: fixed
         width: 25vw
         height: 100vh
-        // background: linear-gradient(250deg,rgba($gradient-color, 1), rgba($color-pink, 1))
         background: rgba(white, 1)
         z-index: 99
         right: 0
         transform: translateX(1000px)
         transition: all .3s
-        outline: black .1rem solid
         @include responde(mobile-3)
             width: 35vw
     &__foreground
@@ -53,7 +51,8 @@
         width: 50px
         height: 50px
         border-radius: 50%
-        background: rgba($color-black, 0.5)
+        background: #e2e2e2
+        box-shadow: $shadow
         right: 5%
         top: 4%
     &__nav
