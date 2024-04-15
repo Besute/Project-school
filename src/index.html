@@ -7,8 +7,8 @@
   <title>Школа ПРО IT</title>
   <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-
-  <script defer src="script.js"></script>
+  <script defer src="js/websiteFunction.js"></script>
+  <script defer src="js/formInput.js"></script>
 </head>
 
 <body>
@@ -226,7 +226,7 @@
         <div class="sections-main">
           <img src="img/chip.svg" alt="Чип" class="second-section__img" />
           <h2 class="paragraph_section-name anonymous-pro-regular second-section__par anim-text second-section__h2">
-            Разработка
+            Моделирование
           </h2>
         </div>
 
@@ -370,7 +370,7 @@
             </div>
           </div>
           <!-- Понадобилось две половинки, чтобы все корректно работало -->
-          <div class="filler_section-3 filler--2_2">
+          <div class="filler_section-3 filler--2">
             <div class="grid">
               <div class="filler--2-left">
                 <div class="filler--2-left__item-1"></div>
@@ -387,7 +387,7 @@
               </div>
             </div>
           </div>
-          <div class="filler_section-3 filler--2">
+          <div class="filler_section-3 filler--2_2">
             <div class="grid">
               <div class="filler--2-left">
                 <div class="filler--2-left__item-1"></div>
@@ -432,28 +432,28 @@
 
     <div id="popup">
       <a href="#" id="popup__overlay"></a>
-      <div id="OknoFormi">
+      <div id="formWindow">
         <form method="post" id="form">
           <div class="row">
-            <label>Имя и Фамилия </label>
             <input type="text" name="name" placeholder="Иван Иванов" required autofocus autocomplete="off" minlength="6"
-              maxlength="20" title="как к Вам обращаться?" />
+              maxlength="20" title="как к Вам обращаться?" id="name" class="row__input"/>
+              <label for="name" class="row__label">Имя и Фамилия </label>
           </div>
 
           <div class="row">
-            <label>Адрес электронной почты</label>
-            <input type="text" name="email" placeholder="example@example.ru" required autocomplete="off" maxlength="40"
-              title="мы напишем сюда" />
+            <input type="text" name="email" placeholder ="example@example.ru" required autocomplete="off" maxlength="40"
+              title="мы напишем сюда" class="row__input" id="email"/>
+            <label class="row__label" for="email">Адрес электронной почты</label>
           </div>
 
           <div class="row">
-            <label>Номер телефона</label>
             <input type="text" name="phone" placeholder="+79XXXXXXXXX" required autocomplete="off" minlength="10"
-              maxlength="12" title="или в Telegram/WhatsApp" />
+              maxlength="12" title="или в Telegram/WhatsApp" class="row__input" id="number"/>
+            <label class="row__label" for="number">Номер телефона</label>
           </div>
 
           <div class="row">
-            <label>Выберите направление</label>
+            <label class="row__label_select">Выберите направление</label>
             <select type="text" name="options">
               <optgroup label="Разработка">
                 <option>Мобильная разработка </option>
@@ -461,7 +461,7 @@
                 <option>Web-разработка</option>
                 <option>Проектирование нейроинтерфейсов</option>
               </optgroup>
-              <optgroup label="Прототипирование">
+              <optgroup label="Моделирование">
                 <option>Робототехника</option>
                 <option>Прототипирование и 3D печать</option>
                 <option>Интернет вещей</option>
