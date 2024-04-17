@@ -2,9 +2,8 @@ const name = document.querySelector("[name=name]"),
   email = document.querySelector("[name=email]"),
   phone = document.querySelector("[name=phone]"),
   options = document.querySelector("[name=options]"),
-  rule = document.querySelector("[name=rule]");
-
-const URL_APP = "https://docs.google.com/spreadsheets/d/1yFqQX5DouqvD0S2M4CFoQHHybrs8AV5M0Q2nYqBf6Y4/edit#gid=0";
+  rule = document.querySelector("[name=rule]"),
+  URL_APP = "https://docs.google.com/spreadsheets/d/1yFqQX5DouqvD0S2M4CFoQHHybrs8AV5M0Q2nYqBf6Y4/edit#gid=0";
 
 // находим форму в документе
 const form = document.querySelector("#form");
@@ -26,7 +25,6 @@ form.addEventListener("submit", async (e) => {
 
   // отменяем действие по умолчаниюВ
   e.preventDefault();
-  console.log('Yes');
   // Класс нового пользователя
   class User {
     #name
