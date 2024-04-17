@@ -4,7 +4,7 @@ const name = document.querySelector("[name=name]"),
   options = document.querySelector("[name=options]"),
   rule = document.querySelector("[name=rule]");
 
-const URL_APP = "https://script.google.com/macros/s/AKfycbzaB9NR1GNAwCcezCPDF0IaiCXAtHrg0m08R6_VFGzhLiwTDtoNS1mc-8A6ROPOQ9Qe/exec";
+const URL_APP = "https://docs.google.com/spreadsheets/d/1yFqQX5DouqvD0S2M4CFoQHHybrs8AV5M0Q2nYqBf6Y4/edit#gid=0";
 
 // находим форму в документе
 const form = document.querySelector("#form");
@@ -15,18 +15,18 @@ form.action = URL_APP;
 function isFilled(details) {
   const { name, email, phone, rule } = details;
   if (!name) return false;
-  if (!email) return false;
-  if (!phone) return false;
-  if (!rule) return false;
+  else if (!email) return false;
+  else if (!phone) return false;
+  else if (!rule) return false;
   return true;
 }
 
 // навешиваем обработчик на отправку формы
 form.addEventListener("submit", async (e) => {
 
-  // отменяем действие по умолчанию
+  // отменяем действие по умолчаниюВ
   e.preventDefault();
-
+  console.log('Yes');
   // Класс нового пользователя
   class User {
     #name

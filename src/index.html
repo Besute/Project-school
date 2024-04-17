@@ -435,21 +435,21 @@
       <div id="formWindow">
         <form method="post" id="form">
           <div class="row">
-            <input type="text" name="name" placeholder="Иван Иванов" required autofocus autocomplete="off" minlength="6"
+            <input type="text" name="name" placeholder="Имя и фамилия" required autofocus autocomplete="off" minlength="6"
               maxlength="20" title="как к Вам обращаться?" id="name" class="row__input"/>
-              <label for="name" class="row__label">Имя и Фамилия </label>
+              <label for="name" class="row__label">Ваше имя и фамилия </label>
           </div>
 
           <div class="row">
-            <input type="text" name="email" placeholder ="example@example.ru" required autocomplete="off" maxlength="40"
+            <input type="text" name="email" placeholder ="Еmail" required autocomplete="off" maxlength="40"
               title="мы напишем сюда" class="row__input" id="email"/>
-            <label class="row__label" for="email">Адрес электронной почты</label>
+            <label class="row__label" for="email">Ваш email</label>
           </div>
 
           <div class="row">
-            <input type="text" name="phone" placeholder="+79XXXXXXXXX" required autocomplete="off" minlength="10"
+            <input type="text" name="phone" placeholder="Номер телефона" required autocomplete="off" minlength="10"
               maxlength="12" title="или в Telegram/WhatsApp" class="row__input" id="number"/>
-            <label class="row__label" for="number">Номер телефона</label>
+            <label class="row__label" for="number">Ваш номер телефона</label>
           </div>
 
           <div class="row">
@@ -474,20 +474,17 @@
           </div>
 
           <div class="row-check">
-            <input type="checkbox" name="rule" id="rule" checked required />
-            <label for="rule">Согласны на обработку персональных данных</label>
+            <input type="checkbox" name="rule" id="rule" checked required class="row__checkbox"/>
+            <label for="rule" class="row-check__label"><span class="row-check__text">Согласны на обработку персональных данных</span></label>
           </div>
 
 
-          <div id="submit">
-            <div class="row">
-              <button type="submit">
-                <div>Отправить</div>
+          <div class="submit">
+              <button type="submit" class="submit__go">
+                Отправить
               </button>
-            </div>
-
-            <a href="#" class="close">
-              <div>Закрыть окно</div>
+            <a href="#" class="submit__close">
+              Закрыть окно
             </a>
           </div>
         </form>
