@@ -1577,7 +1577,9 @@ html {
   justify-content: space-around;
   gap: 1rem;
 }
-.submit button {
+.submit__go {
+  text-align: center;
+  cursor: pointer;
   font-family: "Anonymous Pro", monospace;
   font-style: normal;
   color: #f2f2f2;
@@ -1590,18 +1592,18 @@ html {
   padding: 0.5rem 0;
 }
 @media (max-width: 1208px) {
-  .submit button {
+  .submit__go {
     font-size: 2.5rem;
   }
 }
 @media (max-width: 920px) {
-  .submit button {
+  .submit__go {
     width: 100%;
     font-size: 3rem;
   }
 }
 @media (max-width: 503px) {
-  .submit button {
+  .submit__go {
     font-size: 3.5rem;
   }
 }

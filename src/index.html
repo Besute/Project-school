@@ -7,8 +7,8 @@
   <title>Школа ПРО IT</title>
   <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <script defer src="js/websiteFunction.js"></script>
-  <script defer src="js/formInput.js"></script>
+  <script defer src="js/websiteFunction.js" type="module"></script>
+  <script defer src="js/formInput.js" type="module"></script>
 </head>
 
 <body>
@@ -23,10 +23,10 @@
           <img src="icons/логотип1 1.png" alt="Лого" class="nav__img" />
           <li class="nav__item">
             <!-- Класс navi-main для отличия от бургера -->
-            <a href="" class="nav__href anonymous-pro-bold navi__main">Главная</a>
+            <a href="#" class="nav__href anonymous-pro-bold navi__main">Главная</a>
           </li>
           <li class="nav__item">
-            <a href="" class="nav__href anonymous-pro-bold">Записаться</a>
+            <a href="#" class="nav__href anonymous-pro-bold">Записаться</a>
           </li>
           <li class="nav__item">
             <a href="#popup" class="nav__href anonymous-pro-bold">Контакты</a>
@@ -417,10 +417,10 @@
           <ul class="nav__menu">
             <img src="icons/логотип1 1.png" alt="Лого" class="nav__img" />
             <li class="nav__item nav__item_1">
-              <a class="nav__href anonymous-pro-bold navi__main">Главная</a>
+              <a href="#" class="nav__href anonymous-pro-bold navi__main">Главная</a>
             </li>
             <li class="nav__item nav__item_2">
-              <a class="nav__href anonymous-pro-bold">Записаться</a>
+              <a href="#" class="nav__href anonymous-pro-bold">Записаться</a>
             </li>
             <li class="nav__item nav__item_3">
               <a href="#popup" class="nav__href anonymous-pro-bold">Контактны </a>
@@ -437,7 +437,7 @@
           <div class="row">
             <input type="text" name="name" placeholder="Имя и фамилия" required autofocus autocomplete="off" minlength="6"
               maxlength="20" title="как к Вам обращаться?" id="name" class="row__input"/>
-              <label for="name" class="row__label">Ваше имя и фамилия </label>
+              <label for="nam" class="row__label">Ваше имя и фамилия </label>
           </div>
 
           <div class="row">
@@ -478,11 +478,10 @@
             <label for="rule" class="row-check__label"><span class="row-check__text">Согласны на обработку персональных данных</span></label>
           </div>
 
-
           <div class="submit">
-              <button type="submit" class="submit__go">
+              <div class="submit__go">
                 Отправить
-              </button>
+              </div>
             <a href="#" class="submit__close">
               Закрыть окно
             </a>
@@ -491,7 +490,6 @@
       </div>
     </div>
   </div>
-
 </body>
 
 </html>
