@@ -1,4 +1,4 @@
-const mainInfo = document.querySelector("ul").childNodes[5],
+const mainInfo = document.querySelector("ul").childNodes[2],
   header = document.querySelector(".header"),
   firstSection = document.getElementById("first-section"),
   filler = document.querySelectorAll(".filler"),
