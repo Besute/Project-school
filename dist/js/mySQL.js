@@ -6,8 +6,8 @@ app.use(express.json());
 const mysql = require('mysql')
 
 app.post('/', (req, res) => {
-  res.send('All is correct');
   const {name, phone, email, direction} = req.body
+  console.log(req.body);
   const connection = mysql.createConnection({
           host: 'localhost',
           password: 'secret',
