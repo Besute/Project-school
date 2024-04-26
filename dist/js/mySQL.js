@@ -1,13 +1,12 @@
-const express = require("express");
-const app = express();
-const cors = require('cors');
+const express = require("express"),
+  app = express(),
+  cors = require('cors'),
+  mysql = require('mysql')
 app.use(cors());
 app.use(express.json());
-const mysql = require('mysql')
 
-app.post('/', (req, res) => {
+app.post('/', (req) => {
   const {name, phone, email, direction} = req.body
-  console.log(req.body);
   const connection = mysql.createConnection({
           host: 'localhost',
           password: 'secret',

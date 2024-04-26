@@ -27,6 +27,7 @@ observer.observe(nav_head);
 navig_main.forEach((i) => {
   i.addEventListener("click", (e) => {
     e.preventDefault();
+    console.log('yes');
     header.scrollIntoView({ behavior: "smooth" });
   });
 });
